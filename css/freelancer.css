@@ -206,7 +206,30 @@ section.success a.active {
     color: #2c3e50;
 }
 
+#cancelled {
+    color: red;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 0 0.5em;
+    border: 0.2em solid red;
+    border-radius: 0.3em;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.4);
+    transform: rotate(-10deg);
+    bottom: 2em;
+    z-index: 999;
+}
+
+.cancelled-text {
+    background-color: red;
+}
+
 @media(max-width:767px) {
+    #cancelled {
+        font-size: 1em;
+    }
     section {
         padding: 75px 0;
     }
